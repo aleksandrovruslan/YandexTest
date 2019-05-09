@@ -19,9 +19,18 @@ public class RunTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void testSUm() {
+        assertEquals(sum(1, 1), 2);
+    }
+
     @After
     public void tearDown() {
         System.out.println("tearDown()");
+    }
+
+    private int sum(int first, int second) {
+        return first - second;
     }
 
 }
