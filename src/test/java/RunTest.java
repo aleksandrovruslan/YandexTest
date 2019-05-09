@@ -2,6 +2,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
+
 public class RunTest {
 
     @Before
@@ -12,6 +14,9 @@ public class RunTest {
     @Test
     public void testMethod() {
         System.out.println("testMethod()");
+        String expected = "String";
+        String actual = "String";
+        assertEquals(expected, actual);
     }
 
     @After
